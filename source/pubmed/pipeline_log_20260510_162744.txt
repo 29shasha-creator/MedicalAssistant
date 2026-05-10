@@ -1,0 +1,71 @@
+2026-05-10 16:27:44 | Logging to: pipeline_log_20260510_162744.txt
+2026-05-10 16:28:33 | [Planner] Generated queries:
+2026-05-10 16:28:33 |   1. gallbladder stone treatment options
+2026-05-10 16:28:33 |   2. gallbladder stone laparoscopic cholecystectomy outcomes
+2026-05-10 16:28:33 |   3. gallbladder stone ursodeoxycholic acid efficacy
+2026-05-10 16:28:33 |   4. gallbladder stone management with comorbid diabetes
+2026-05-10 16:28:34 | [Efetch] Query succeeded with filter level 1
+2026-05-10 16:28:34 | [Efetch] PMIDs found: 15
+2026-05-10 16:28:38 | [Efetch] Query succeeded with filter level 1
+2026-05-10 16:28:38 | [Efetch] PMIDs found: 15
+2026-05-10 16:28:41 | [Efetch] Query succeeded with filter level 1
+2026-05-10 16:28:41 | [Efetch] PMIDs found: 15
+2026-05-10 16:28:46 | [Efetch] Query succeeded with filter level 1
+2026-05-10 16:28:46 | [Efetch] PMIDs found: 5
+2026-05-10 16:28:47 | [Efetch] Total articles fetched: 50
+2026-05-10 16:28:47 | TOTAL FILTERED DOCS: , 49
+2026-05-10 16:28:48 |   ✗ [NO] Clinical Decision-Making in Laparoscopic Common Bile Duct Explora
+2026-05-10 16:28:49 |   ✗ [NO] High-altitude exposure remodels the gut microbiota: health and di
+2026-05-10 16:28:51 |   ✗ [NO] Acute pancreatitis as a severe complication of scoliosis surgery 
+2026-05-10 16:28:52 |   ✓ [YES] Recent Advances in Possible Treatment Options Including Herbal Re
+2026-05-10 16:28:54 |   ✗ [NO] Current treatment strategy for asymptomatic bile duct stones.
+2026-05-10 16:28:55 |   ✓ [YES] The Management of Gallstones in Pregnancy.
+2026-05-10 16:28:55 |   ✗ [NO] Management of gallstone pancreatitis in children.
+2026-05-10 16:28:56 |   ✗ [NO] Medical management of biliary stone disease in pediatric patients
+2026-05-10 16:28:57 |   ✓ [YES] One- and Two-Stage Approaches to Common Duct Stones.
+2026-05-10 16:28:57 |   ✗ [NO] Top 20 Research Studies of 2024 for Primary Care Physicians.
+2026-05-10 16:28:58 |   ✓ [YES] Meta-analysis of randomized controlled trials comparing single-st
+2026-05-10 16:28:59 |   ✗ [NO] Safety profile of semaglutide versus placebo in the SELECT study:
+2026-05-10 16:28:59 |   ✗ [NO] Endoscopic Papillary Large Balloon Dilatation With or Without End
+2026-05-10 16:29:00 |   ✗ [NO] Cholangiocarcinoma - Morphology, Immunohistochemistry, and Geneti
+2026-05-10 16:29:01 |   ✗ [NO] Safety of Simultaneous Laparoscopic Cholecystectomy and Inguinal 
+2026-05-10 16:29:02 |   ✓ [YES] Comparison outcomes between laparoscopic choledocholithotripsy an
+2026-05-10 16:29:03 |   ✓ [YES] GallRiks registry: Twenty years of improving the safety and quali
+2026-05-10 16:29:03 |   ✓ [YES] Bariatric Surgery With or Without Concomitant Laparoscopic Cholec
+2026-05-10 16:29:04 |   ✓ [YES] Completion cholecystectomy: a meta-analysis of indications, techn
+2026-05-10 16:29:05 |   ✓ [YES] Prospective randomized trial of triple port laparoscopic cholecys
+2026-05-10 16:29:05 |   ✓ [YES] The surgical versus non-surgical approach to the management of ac
+2026-05-10 16:29:06 |   ✗ [NO] Technical Considerations in Cholecystectomy in the Patient With S
+2026-05-10 16:29:06 |   ✓ [YES] Clinical outcomes of laparoscopic versus robotic cholecystectomy 
+2026-05-10 16:29:07 |   ✗ [NO] Porcelain gallbladder secondary to chronic cholelithiasis with fi
+2026-05-10 16:29:08 |   ✓ [YES] ERCP first vs. Surgery first: A comparative perspective in pediat
+2026-05-10 16:29:08 |   ✗ [NO] Post-operative morbidity and mortality of laparoscopic cholecyste
+2026-05-10 16:29:09 |   ✗ [NO] Intraoperative imaging of the common bile duct: a systematic revi
+2026-05-10 16:29:10 |   ✓ [YES] Endoscopic and surgical approaches in the management of pediatric
+2026-05-10 16:29:10 |   ✓ [YES] ERCP first vs. surgery first: A comparative perspective in pediat
+2026-05-10 16:29:11 |   ✓ [YES] Gallstone Dissolution Effects of Combination Therapy with n-3 Pol
+2026-05-10 16:29:12 |   ✓ [YES] Probiotics for gallstone prevention in patients with bariatric su
+2026-05-10 16:29:13 |   ✓ [YES] Ursodeoxycholic acid for the prevention of symptomatic gallstone 
+2026-05-10 16:29:14 |   ✓ [YES] Ursodeoxycholic acid for the prevention of gallstone and subseque
+2026-05-10 16:29:15 |   ✓ [YES] Cholelithiasis after bariatric surgery, incidence, and prophylaxi
+2026-05-10 16:29:24 |   ✗ [NO] Variants in ABCB4 (MDR3) across the spectrum of cholestatic liver
+2026-05-10 16:29:25 |   ✗ [NO] Efficacy and Safety of Ursodeoxycholic Acid for the Prevention of
+2026-05-10 16:29:26 |   ✗ [NO] The treatment with pasireotide in Cushing's disease: effect of lo
+2026-05-10 16:29:27 |   ✓ [YES] Efficacy of Magnesium Trihydrate of Ursodeoxycholic Acid and Chen
+2026-05-10 16:29:27 |   ✓ [YES] Ursodeoxycholic acid and diets higher in fat prevent gallbladder 
+2026-05-10 16:29:28 |   ✓ [YES] Is the addition of choleretic agents in multiple double-pigtail b
+2026-05-10 16:29:29 |   ✓ [YES] Nutritional approaches to prevention and treatment of gallstones.
+2026-05-10 16:29:29 |   ✓ [YES] Efficacy and safety of ursodeoxycholic acid in primary, type IIa 
+2026-05-10 16:29:30 |   ✓ [YES] Ursodeoxycholic acid in the prevention of gallstone formation aft
+2026-05-10 16:29:31 |   ✗ [NO] Lessons from the toxic bile concept for the pathogenesis and trea
+2026-05-10 16:29:31 |   ✗ [NO] Health Benefits of Long-Term Weight-Loss Maintenance.
+2026-05-10 16:29:33 |   ✓ [YES] Evaluation of Preoperative Risk Factor for Converting Laparoscopi
+2026-05-10 16:29:33 |   ✗ [NO] Obesity management: update on orlistat.
+2026-05-10 16:29:34 |   ✗ [NO] Caring for patients after bariatric surgery.
+2026-05-10 16:29:35 |   ✗ [NO] Nonpharmacologic treatment of obesity.
+2026-05-10 16:29:35 | [Relevance] Kept 26 / 49 documents
+2026-05-10 16:29:35 | [Context] reached ---- using 4 docs
+2026-05-10 16:29:35 | [Context] Built: 4 docs | 6106 chars | ~1526 tokens
+2026-05-10 16:29:44 | [Reasoner] Reasoning generated : 4097 chars
+2026-05-10 16:29:46 | [Validator] PASS: The answer is fully supported by the retrieved medical evidence, with consistent disease and treatment descriptions, relevant PMIDs, and no unsupported claims or hallucinated conditions. All cited studies align with the treatment options discussed.
+2026-05-10 16:29:46 | [Validator] Needs more retrieval: False

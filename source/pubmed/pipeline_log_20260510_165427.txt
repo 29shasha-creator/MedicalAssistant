@@ -1,0 +1,69 @@
+2026-05-10 16:54:27 | Logging to: pipeline_log_20260510_165427.txt
+2026-05-10 16:55:24 | [Planner] Generated queries:
+2026-05-10 16:55:24 |   1. long COVID treatment clinical trials
+2026-05-10 16:55:24 |   2. long COVID rehabilitation interventions clinical trials
+2026-05-10 16:55:24 |   3. long COVID fatigue management clinical trials
+2026-05-10 16:55:24 |   4. long COVID cognitive impairment treatment studies
+2026-05-10 16:55:25 | [Efetch] Query succeeded with filter level 1
+2026-05-10 16:55:25 | [Efetch] PMIDs found: 15
+2026-05-10 16:55:29 | [Efetch] Query succeeded with filter level 1
+2026-05-10 16:55:29 | [Efetch] PMIDs found: 15
+2026-05-10 16:55:32 | [Efetch] Query succeeded with filter level 1
+2026-05-10 16:55:32 | [Efetch] PMIDs found: 15
+2026-05-10 16:55:35 | [Efetch] Query succeeded with filter level 1
+2026-05-10 16:55:35 | [Efetch] PMIDs found: 15
+2026-05-10 16:55:37 | [Efetch] Total articles fetched: 60
+2026-05-10 16:55:37 | TOTAL FILTERED DOCS: , 47
+2026-05-10 16:55:38 |   ✗ [NO] NVX-CoV2372, monovalent mRNA and bivalent mRNA vaccines elicit br
+2026-05-10 16:55:39 |   ✗ [NO] Safety of Matrix-M-adjuvanted COVID-19, seasonal influenza, combi
+2026-05-10 16:55:40 |   ✓ [YES] Management of long COVID-19 in children and adolescents: from dia
+2026-05-10 16:55:40 |   ✓ [YES] Feasibility and preliminary effects of a yoga program developed f
+2026-05-10 16:55:41 |   ✓ [YES] Telemedical acupressure and Qigong for post-COVID fatigue: A qual
+2026-05-10 16:55:42 |   ✗ [NO] Effectiveness of tailored public health messages for vulnerable p
+2026-05-10 16:55:43 |   ✗ [NO] Optimal Dose and Safety of Intravenous Favipiravir in Hospitalize
+2026-05-10 16:55:44 |   ✗ [NO] Safety and Efficacy of Colchicine across the Spectrum of Coronary
+2026-05-10 16:55:44 |   ✗ [NO] The immune response of the mRNA vaccine CS-2034 as a heterologous
+2026-05-10 16:55:45 |   ✗ [NO] Exploring the long-term hydroxychloroquine's effects on COVID-19 
+2026-05-10 16:55:46 |   ✗ [NO] Expert perspectives on Myalgic encephalomyelitis/chronic fatigue 
+2026-05-10 16:55:46 |   ✗ [NO] Safety of upadacitinib in atopic dermatitis in randomized clinica
+2026-05-10 16:55:47 |   ✗ [NO] Cellular immune responses 12 months after fractional or standard 
+2026-05-10 16:55:47 |   ✓ [YES] Effects of Exercise-Based Pulmonary Rehabilitation in Patients wi
+2026-05-10 16:55:48 |   ✗ [NO] Evaluation of the impact of different notification methods for un
+2026-05-10 16:55:49 |   ✓ [YES] Effect of telerehabilitation on post-COVID-19 individuals with lo
+2026-05-10 16:55:49 |   ✓ [YES] Virtual reality in pulmonary rehabilitation: A systematic review 
+2026-05-10 16:55:50 |   ✗ [NO] Recruiting people living with mild cognitive impairment into a fa
+2026-05-10 16:55:51 |   ✗ [NO] Six-month follow-up results of clinic- and telerehabilitation-bas
+2026-05-10 16:55:51 |   ✓ [YES] Does pulmonary rehabilitation improve fatigue in patients with po
+2026-05-10 16:55:52 |   ✓ [YES] Long COVID brain fog treatment: An early-phase randomized control
+2026-05-10 16:55:53 |   ✓ [YES] Serum extracellular vesicle RNA profiles in long COVID: insights 
+2026-05-10 16:55:53 |   ✓ [YES] Individualized online exercise therapy aids recovery in pediatric
+2026-05-10 16:55:54 |   ✓ [YES] Evaluation of Interventions for Cognitive Symptoms in Long COVID:
+2026-05-10 16:55:55 |   ✓ [YES] Effect of dynamic neuromuscular stabilization exercises on postur
+2026-05-10 16:55:55 |   ✗ [NO] Eloralintide, a selective, long-acting amylin receptor agonist fo
+2026-05-10 16:55:56 |   ✗ [NO] Establishing a filarial clinical research platform in a resource-
+2026-05-10 16:55:56 |   ✓ [YES] Vitamin D in Myalgic Encephalomyelitis/Chronic Fatigue Syndrome A
+2026-05-10 16:55:57 |   ✓ [YES] Integrative multimodal treatment approach for patients suffering 
+2026-05-10 16:55:58 |   ✗ [NO] Safety profile of self-amplifying mRNA SARS-CoV-2 vaccine ARCT-15
+2026-05-10 16:55:58 |   ✓ [YES] Long COVID and gut microbiome: insights into pathogenesis and the
+2026-05-10 16:55:59 |   ✓ [YES] Experiences with Qi and changes in post-acute sequelae of COVID-1
+2026-05-10 16:56:00 |   ✗ [NO] Differentiating COVID-19 vaccine-related adverse events from long
+2026-05-10 16:56:00 |   ✗ [NO] Mitochondrial Reactive Oxygen Species: A Unifying Mechanism in Lo
+2026-05-10 16:56:01 |   ✓ [YES] Long COVID Optimal Health Programme to Enhance Mental and Physica
+2026-05-10 16:56:01 |   ✓ [YES] Digital Biometric Measures in Long COVID: A Secondary Analysis of
+2026-05-10 16:56:02 |   ✓ [YES] Pharmacological and non-pharmacological management of long COVID.
+2026-05-10 16:56:02 |   ✗ [NO] Factors associated with long COVID in sub-Saharan Africa: a scopi
+2026-05-10 16:56:03 |   ✗ [NO] Astrocyte-mediated hippocampal damage in the pathogenesis of dyse
+2026-05-10 16:56:04 |   ✓ [YES] Long COVID: mechanisms of disease, multisystem sequelae, and pros
+2026-05-10 16:56:04 |   ✓ [YES] Impact of nirmatrelvir/ritonavir on the risk of long COVID in out
+2026-05-10 16:56:05 |   ✓ [YES] Cognitive Interventions and Rehabilitation to Address Long-COVID 
+2026-05-10 16:56:06 |   ✗ [NO] Brain fog with long covid and chemotherapy: systematic review and
+2026-05-10 16:56:07 |   ✗ [NO] From in-person to virtual: The impact of crisis-enforced delivery
+2026-05-10 16:56:07 |   ✓ [YES] Web-application guided bimodal olfactory training for COVID-19 pa
+2026-05-10 16:56:08 |   ✓ [YES] Protective effects of booster dose of SARS-COV-2 vaccination agai
+2026-05-10 16:56:09 |   ✗ [NO] Profiles of Individuals With Long COVID Reporting Persistent Cogn
+2026-05-10 16:56:09 | [Relevance] Kept 24 / 47 documents
+2026-05-10 16:56:09 | [Context] reached ---- using 4 docs
+2026-05-10 16:56:09 | [Context] Built: 4 docs | 6895 chars | ~1723 tokens
+2026-05-10 16:56:21 | [Reasoner] Reasoning generated : 3106 chars
+2026-05-10 16:56:22 | [Validator] PASS: The answer is supported by relevant PMIDs, consistent with the disease (post COVID-19 condition), and discusses treatment options with appropriate benefits and risks. No unsupported claims or hallucinated conditions are present, and the citations provided are relevant to the treatments discussed.
+2026-05-10 16:56:22 | [Validator] Needs more retrieval: False

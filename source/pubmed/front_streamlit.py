@@ -5,33 +5,20 @@ import os, sys
 sys.path.append(os.path.dirname(__file__))
 from back_agentic import graphflow
 
+import streamlit.components.v1 as components
+
+# ── Logo path ────────────────────────────────────────────────
+logo_path = os.path.join(os.path.dirname(__file__), "logo.png")
+
 st.set_page_config(
     page_title="Medical Research Assistant",
-    page_icon="🔬",
+    page_icon=logo_path,          # ← fixed: was "logo_path" (string), now logo_path (variable)
     layout="wide",
     initial_sidebar_state="collapsed"
 )
+
 st.markdown("""
 <style>
-/* Progress bar label */
-[data-testid="stProgressBar"] ~ p,
-div.stProgress p {
-    color: #00e5c0 !important;
-    font-weight: 500 !important;
-}
-
-/* Progress bar track */
-[data-testid="stProgressBar"] {
-    background: rgba(0,229,192,0.1) !important;
-    border-radius: 10px !important;
-}
-
-/* Progress bar fill */
-[data-testid="stProgressBar"] > div {
-    background: linear-gradient(90deg, #00e5c0, #00b89a) !important;
-    border-radius: 10px !important;
-}
-
 /* Expander header text */
 [data-testid="stExpander"] summary p {
     color: #6a90b8 !important;
@@ -69,111 +56,16 @@ st.markdown("""
     --border:    rgba(0,229,192,0.18);
 }
 
-/* Reset background — remove any image bleeding through */
 .stApp, .stApp > * {
     background: var(--navy) !important;
     font-family: 'Sora', sans-serif !important;
 }
 
-/* Remove default Streamlit padding */
 .block-container {
     padding: 2rem 3rem !important;
     max-width: 1100px !important;
 }
 
-/* ── Hero ── */
-.hero {
-    background: linear-gradient(135deg, #071830 0%, #0a2040 50%, #061525 100%);
-    border: 1px solid var(--border);
-    border-radius: 20px;
-    padding: 44px 52px;
-    margin-bottom: 28px;
-    position: relative;
-    overflow: hidden;
-}
-.hero::before {
-    content: '';
-    position: absolute;
-    top: -80px; right: -80px;
-    width: 320px; height: 320px;
-    background: radial-gradient(circle, rgba(0,229,192,0.07) 0%, transparent 65%);
-    pointer-events: none;
-}
-.hero::after {
-    content: '';
-    position: absolute;
-    bottom: -50px; left: 20%;
-    width: 250px; height: 250px;
-    background: radial-gradient(circle, rgba(240,192,96,0.04) 0%, transparent 65%);
-    pointer-events: none;
-}
-.hero-icon {
-    font-size: 2.4rem;
-    margin-bottom: 8px;
-    display: block;
-}
-.hero-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.6rem;
-    font-weight: 600;
-    color: #ffffff;
-    margin: 0 0 6px 0;
-    line-height: 1.2;
-}
-.hero-title em {
-    color: var(--teal);
-    font-style: normal;
-}
-.hero-sub {
-    font-size: 0.85rem;
-    color: var(--muted);
-    font-weight: 300;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin: 0 0 28px 0;
-}
-.pubmed-box {
-    background: rgba(0,229,192,0.06);
-    border: 1px solid rgba(0,229,192,0.2);
-    border-radius: 12px;
-    padding: 18px 22px;
-    margin-bottom: 24px;
-}
-.pubmed-box .label {
-    font-size: 0.7rem;
-    font-weight: 600;
-    color: var(--teal);
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    margin-bottom: 6px;
-}
-.pubmed-box p {
-    font-size: 0.9rem;
-    color: #9ab8d8;
-    line-height: 1.7;
-    margin: 0;
-}
-.pubmed-box p strong {
-    color: #ddeeff;
-    font-weight: 500;
-}
-.badges {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-}
-.badge {
-    background: rgba(0,229,192,0.08);
-    border: 1px solid rgba(0,229,192,0.2);
-    color: var(--teal);
-    border-radius: 30px;
-    padding: 5px 14px;
-    font-size: 0.75rem;
-    font-weight: 500;
-    letter-spacing: 0.3px;
-}
-
-/* ── Input label ── */
 .stTextArea > label {
     color: var(--muted) !important;
     font-size: 0.72rem !important;
@@ -197,7 +89,6 @@ st.markdown("""
     box-shadow: 0 0 0 3px rgba(0,229,192,0.08) !important;
 }
 
-/* ── Button ── */
 .stButton > button {
     background: linear-gradient(135deg, #00e5c0 0%, #00b89a 100%) !important;
     color: #040d1a !important;
@@ -215,7 +106,6 @@ st.markdown("""
     box-shadow: 0 8px 28px rgba(0,229,192,0.3) !important;
 }
 
-/* ── Metrics ── */
 [data-testid="metric-container"] {
     background: var(--card) !important;
     border: 1px solid var(--border) !important;
@@ -235,7 +125,6 @@ st.markdown("""
     font-size: 2.2rem !important;
 }
 
-/* ── Markdown text ── */
 .stMarkdown p  { color: #9ab8d8 !important; line-height: 1.8 !important; }
 .stMarkdown li { color: #9ab8d8 !important; line-height: 1.8 !important; }
 .stMarkdown h1, .stMarkdown h2 {
@@ -251,7 +140,6 @@ st.markdown("""
 .stMarkdown strong { color: #ddeeff !important; }
 .stMarkdown a     { color: var(--teal) !important; }
 
-/* ── Summary card ── */
 .summary-card {
     background: var(--card);
     border: 1px solid var(--border);
@@ -268,7 +156,6 @@ st.markdown("""
     border-bottom: 1px solid var(--border);
 }
 
-/* ── Expander ── */
 [data-testid="stExpander"] {
     background: var(--card2) !important;
     border: 1px solid var(--border) !important;
@@ -282,12 +169,6 @@ st.markdown("""
 [data-testid="stExpander"] summary:hover { color: var(--teal) !important; }
 [data-testid="stExpander"] p { color: #7a9dbf !important; }
 
-/* ── Progress bar ── */
-[data-testid="stProgressBar"] > div > div {
-    background: linear-gradient(90deg, var(--teal), var(--teal-dim)) !important;
-}
-
-/* ── Code block (logs) ── */
 .stCode, code, pre {
     background: #030c18 !important;
     color: var(--teal) !important;
@@ -296,10 +177,8 @@ st.markdown("""
     font-size: 0.8rem !important;
 }
 
-/* ── Divider ── */
 hr { border-color: rgba(0,229,192,0.1) !important; }
 
-/* ── Link button ── */
 .stLinkButton a {
     background: rgba(0,229,192,0.08) !important;
     color: var(--teal) !important;
@@ -308,7 +187,6 @@ hr { border-color: rgba(0,229,192,0.1) !important; }
     font-size: 0.82rem !important;
 }
 
-/* ── Alert ── */
 [data-testid="stAlert"] {
     background: rgba(7,18,37,0.9) !important;
     border-color: var(--border) !important;
@@ -316,10 +194,8 @@ hr { border-color: rgba(0,229,192,0.1) !important; }
 }
 [data-testid="stAlert"] p { color: var(--muted) !important; }
 
-/* ── Section heading ── */
 h3 { color: #ffffff !important; font-family: 'Playfair Display', serif !important; }
 
-/* ── Scrollbar ── */
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: var(--navy); }
 ::-webkit-scrollbar-thumb { background: #0e2a45; border-radius: 3px; }
@@ -327,87 +203,86 @@ h3 { color: #ffffff !important; font-family: 'Playfair Display', serif !importan
 </style>
 """, unsafe_allow_html=True)
 
-# ── Hero Section ─────────────────────────────────────────────
-import streamlit.components.v1 as components
+# ── Logo ─────────────────────────────────────────────────────
+# ↓↓↓ THIS IS THE ONLY NEW LINE ADDED ↓↓↓
+st.image(logo_path, width=160)
+# ↑↑↑ END OF NEW LINE ↑↑↑
 
+# ── Hero Section ─────────────────────────────────────────────
 components.html("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600&display=swap');
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
-
 body { background: transparent; font-family: 'Sora', sans-serif; }
 
 .hero {
     background: linear-gradient(135deg, #071830 0%, #0a2040 50%, #061525 100%);
     border: 1px solid rgba(0,229,192,0.18);
-    border-radius: 20px;
-    padding: 40px 48px;
+    border-radius: 16px;
+    padding: 22px 32px;              /* ← reduced from 40px 48px */
     position: relative;
     overflow: hidden;
 }
 .hero::before {
     content: '';
     position: absolute;
-    top: -80px; right: -80px;
-    width: 320px; height: 320px;
+    top: -60px; right: -60px;
+    width: 220px; height: 220px;
     background: radial-gradient(circle, rgba(0,229,192,0.07) 0%, transparent 65%);
     pointer-events: none;
 }
-.hero-icon  { font-size: 2rem; margin-bottom: 8px; display: block; }
 .hero-title {
     font-family: 'Playfair Display', serif;
-    font-size: 2.4rem;
+    font-size: 1.8rem;               /* ← reduced from 2.4rem */
     font-weight: 600;
     color: #ffffff;
-    margin-bottom: 6px;
+    margin-bottom: 3px;
     line-height: 1.2;
 }
 .hero-title em { color: #00e5c0; font-style: normal; }
 .hero-sub {
-    font-size: 0.78rem;
+    font-size: 0.72rem;
     color: #6a90b8;
     font-weight: 300;
-    letter-spacing: 2.5px;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    margin-bottom: 28px;
+    margin-bottom: 14px;             /* ← reduced from 28px */
 }
 .pubmed-box {
     background: rgba(0,229,192,0.06);
     border: 1px solid rgba(0,229,192,0.2);
-    border-radius: 12px;
-    padding: 18px 22px;
-    margin-bottom: 22px;
+    border-radius: 10px;
+    padding: 12px 16px;              /* ← reduced from 18px 22px */
+    margin-bottom: 14px;             /* ← reduced from 22px */
 }
 .pubmed-box .label {
-    font-size: 0.68rem;
+    font-size: 0.65rem;
     font-weight: 600;
     color: #00e5c0;
     text-transform: uppercase;
-    letter-spacing: 1.8px;
-    margin-bottom: 8px;
+    letter-spacing: 1.6px;
+    margin-bottom: 5px;
 }
 .pubmed-box p {
-    font-size: 0.88rem;
+    font-size: 0.82rem;              /* ← reduced from 0.88rem */
     color: #8aadcc;
-    line-height: 1.75;
+    line-height: 1.6;                /* ← reduced from 1.75 */
 }
 .pubmed-box strong { color: #ddeeff; font-weight: 500; }
-.badges { display: flex; gap: 8px; flex-wrap: wrap; }
+.badges { display: flex; gap: 6px; flex-wrap: wrap; }
 .badge {
     background: rgba(0,229,192,0.08);
     border: 1px solid rgba(0,229,192,0.22);
     color: #00e5c0;
     border-radius: 30px;
-    padding: 5px 14px;
-    font-size: 0.73rem;
+    padding: 3px 11px;               /* ← reduced from 5px 14px */
+    font-size: 0.7rem;               /* ← reduced from 0.73rem */
     font-weight: 500;
-    letter-spacing: 0.3px;
 }
 </style>
 
 <div class="hero">
-    <span class="hero-icon">🔬</span>
     <p class="hero-title">Medical <em>Research</em> Assistant</p>
     <p class="hero-sub">Agentic AI &nbsp;·&nbsp; Evidence-Based &nbsp;·&nbsp; PubMed Powered</p>
 
@@ -432,13 +307,13 @@ body { background: transparent; font-family: 'Sora', sans-serif; }
         <span class="badge">🤖 LLM Reasoning</span>
     </div>
 </div>
-""", height=360)
+""", height=240)                     # ← reduced from 360
 
 # ── Input ────────────────────────────────────────────────────
 question = st.text_area(
     label="**🔍 Ask a Medical Research Question**",
     placeholder="e.g.  What are the targeted therapy options for lung cancer patients with hypertension?",
-    height=115
+    height=90
 )
 
 col1, col2 = st.columns([1, 6])
@@ -450,7 +325,6 @@ if submit and question.strip():
 
     Query = {"messages": [HumanMessage(content=question)]}
 
-    progress  = st.progress(0, text="Initialising...")
     status    = st.empty()
     logs      = st.expander("📋 Pipeline logs", expanded=False)
     log_lines = []
@@ -472,7 +346,6 @@ if submit and question.strip():
         for chunk in graphflow.stream(Query):
             for node_name, node_output in chunk.items():
                 pct, msg = steps.get(node_name, (50, f"Running {node_name}..."))
-                progress.progress(pct, text=f"⏳ {msg}")
                 status.markdown(
                     f"<p style='color:#00e5c0;background:rgba(0,229,192,0.06);"
                     f"border:1px solid rgba(0,229,192,0.2);border-radius:8px;"
@@ -500,7 +373,6 @@ if submit and question.strip():
 
     except Exception as e:
         import re
-        progress.empty()
         status.empty()
         err = str(e)
         if "rate_limit_exceeded" in err or "429" in err:
@@ -511,7 +383,6 @@ if submit and question.strip():
             st.error(f"❌ Error: {err}")
         st.stop()
 
-    progress.empty()
     status.empty()
 
     # ── Results ──────────────────────────────────────────────
